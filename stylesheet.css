@@ -1,3 +1,6 @@
+@charset "utf-8";
+/* CSS Document */
+
 body {
   margin: 0;
   font-family: "Lucida Grande";
@@ -24,11 +27,15 @@ header {
 }
 
 .header-left {
-  float: left;
+  
 }
 .header-logo {
   color: #c0392b;
-  padding-top:15px;
+  
+}
+.header-logo h1 {
+	text-align: center;
+	
 }
 
 .header-left {
@@ -49,8 +56,7 @@ header {
 
 .top-wrapper {
   padding: 180px 0 100px 0;
-  background-image: url(https://ksmtour.com/media/images/articles18/pulau-wayag-papua-barat.jpg);
-  background-size: cover;
+   background-size: cover;
   color: white;
   text-align: center;
 }
@@ -156,19 +162,19 @@ header {
   padding-bottom: 25px;
   margin-bottom: 15px;
 }
-
-.lesson {
-  float: left;
-  width: 25%;
+.lessons{
+	display: flex;
+	flex: auto;
+	flex-wrap: wrap;
 }
+
+
 
 .lesson-icon {
   position: relative;
 }
-.lesson-icon img {
-  height:150;
-  width:130;
-}
+
+
 
 .txt-contents {
   width: 80%;
