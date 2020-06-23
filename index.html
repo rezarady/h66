@@ -4,22 +4,34 @@
     <meta charset="utf-8">
     <title>Neverstoptraveling</title>
     <link rel="stylesheet" href="stylesheet.css">
+	 <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="header-left">
-          <div class="header-logo">
-            <h1>NeveStopTraveling</h1>
-          </div>
-        </div>
-        <div class="header-right">
-          <a href="#" class="login">Log in</a>
-        </div>
-      </div>
-    </header>
-    <div class="top-wrapper">
+	   <div class="main">
+		<div class="contents">
+			<div class="line-section"></div>
+			<div class="contents-item-one slider">
+				<h1>welcome to</h1>
+				<h2>Wonderful Raja Ampat</h2>
+				<span class=""></span>
+			</div>
+
+			<div class="contents-item-two slider">
+				<h1>Nature</h1>
+				<h2 class="pointer">DISCOVER MORE </h2>
+			</div>
+
+			<div class="contents-item-three slider">
+				<h1>Culture</h1>
+				<h2 class="pointer">DISCOVER MORE </h2>
+			</div>
+
+			<div class="contents-item-four slider">
+				<h1>Underwater</h1>
+				<h2 class="pointer">DISCOVER MORE </h2>
+			</div>
+ <div class="top-wrapper">
       <div class="container">
         <div class="btn-wrapper">
           <a href="#" class="btn signup">Daftar dengan Email</a>
@@ -29,6 +41,21 @@
         </div>
       </div>
     </div>
+		</div>
+	</div>
+    <header>
+      <div class="container">
+        <div class="header-left">
+          <div class="header-logo">
+            <h1>NeverStopTraveling</h1>
+          </div>
+        </div>
+        <div class="header-right">
+          <a href="#" class="login">Log in</a>
+        </div>
+      </div>
+    </header>
+   
     <div class="lesson-wrapper">
       <div class="container">
         <div class="heading">
@@ -47,7 +74,7 @@
           </div>
           <div class="lesson">
             <div class="lesson-icon">
-              <img src=https://png.pngtree.com/png-clipart/20190429/ourlarge/pngtree-flower-elements-of-hand-painted-travel-camera-png-image_981160.jpg>
+              <img src="https://png.pngtree.com/png-clipart/20190429/ourlarge/pngtree-flower-elements-of-hand-painted-travel-camera-png-image_981160.jpg">
             </div>
             <p class="txt-contents">bekerjasama dengan photografer profesional,ciptakan moment berharga dengan orang tersayang</p>
           </div>
@@ -66,5 +93,23 @@
         </div>
       </div>
     </div>
+	 
+	
+	<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+		  var i;
+		  var x = document.getElementsByClassName("slider");
+		  for (i = 0; i < x.length; i++) {
+		    x[i].style.display = "none";  
+		  }
+		  myIndex++;
+		  if (myIndex > x.length) {myIndex = 1}    
+		  x[myIndex-1].style.display = "block";  
+		  setTimeout(carousel, 5000); 
+		}
+	</script>
   </body>
 </html>
